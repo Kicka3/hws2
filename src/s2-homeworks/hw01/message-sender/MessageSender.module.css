@@ -4,6 +4,9 @@
     align-items: center;
     justify-content: space-between;
     gap: 44px;
+
+    margin-top: 56px;
+    margin-bottom: 35px;
 }
 
 .textarea {
@@ -13,6 +16,7 @@
     min-height: 40px;
     border: none;
 
+    padding: 12px 0 24px 12px;
     border-radius: 20px;
     background: #F5F7FB;
     box-shadow: 0px 1px 2px 0px rgba(29, 33, 38, 0.10), 0px 5px 20px 0px rgba(29, 33, 38, 0.03);
@@ -34,12 +38,12 @@
     line-height: normal;
 
 
-
 }
 
 .button:hover {
 
 }
+
 .button:active {
 
 }
