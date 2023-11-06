@@ -1,16 +1,14 @@
 .App {
     --header_height: 60px;
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    height: 100vh;
-    min-width: 100%;
+    width: 1280px;
+    margin: 0 auto;
+}
 
+#hw1 {
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    flex-direction: column;
+    justify-content: center;
 }
 
 .hw {
@@ -18,7 +16,10 @@
     border-bottom: #D9D9D9 1px solid;
     min-width: 100%;
     min-height: 446px;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
 }
 
 .hwTitle {
@@ -28,4 +29,6 @@
     font-weight: 600;
     font-style: normal;
     line-height: normal;
+    margin: 37px 0 10px 10px;
+
 }
