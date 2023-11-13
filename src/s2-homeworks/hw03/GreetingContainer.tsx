@@ -2,15 +2,13 @@ import React, {ChangeEvent, KeyboardEvent, useState} from 'react'
 import Greeting from './Greeting'
 import {UserType} from './HW3'
 import {Simulate} from "react-dom/test-utils";
-import error = Simulate.error;
-import keyPress = Simulate.keyPress;
 
 type GreetingContainerPropsType = {
     users: UserType[] // need to fix any
     addUserCallback: (name: string) => void // need to fix any
 }
 
-export const pureAddUser = (name: string, setError: (value: string) => void, setName: any, addUserCallback: any) => {
+export const pureAddUser = (name: string, setError: (value: string) => void, setName: (value: string)=> void, addUserCallback: (name: string) => void) => {
     // если имя пустое - показать ошибку, иначе - добавить юзера и очистить инпут
     // debugger
     if (name.trim().length === 0) {
@@ -55,8 +53,9 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
     const [error, setError] = useState<string>('') // need to fix any
 
     const setNameCallback = (e: ChangeEvent<HTMLInputElement>) => { // need to fix any
-        setName(e.currentTarget.value) // need to fix
-        error && setError('Ошибка! Введите имя!')
+        const name = setName(e.currentTarget.value) // need to fix
+        error && setError('')
+
         console.log(name)
     }
     const addUser = () => {
