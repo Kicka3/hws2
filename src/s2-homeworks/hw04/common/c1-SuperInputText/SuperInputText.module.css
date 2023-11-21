@@ -2,6 +2,13 @@
 }
 
 .input {
+    outline: none;
+    width: 372px;
+    height: 36px;
+    border: 1px solid #D1D1D1;
+    border-radius: 3px;
+    font-size: 18px;
+    padding: 2px 6px;
 }
 
 .inputWrapper {
@@ -11,10 +18,13 @@
 }
 
 .errorInput {
+    border: 1px red;
 }
 
 .errorInput:focus {
+    border: 1px red;
 }
 
 .error {
+    border: 1px red;
 }
