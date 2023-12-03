@@ -3,6 +3,7 @@
     box-sizing: border-box;
     width: 1280px;
     margin: 0 auto;
+    /*//центр убрал*/
 }
 
 #hw1 {
@@ -29,6 +30,5 @@
     font-style: normal;
     line-height: normal;
     margin: 37px 0 30px 10px;
-
 }
 
