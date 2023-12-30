@@ -1,10 +1,28 @@
 .spanBlock {
+    margin: 42px 13px 24px 0;
+    display: flex;
+    align-items: flex-end;
 }
 
 .span {
+    color: #0080FF;
+    margin-left: 10px;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 
 .input {
+    display: flex;
+    width: 276px;
+    height: 36px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border: 1px #D1D1D1 solid;
+    margin: 42px 13px 24px 0;
 }
 
 .pen {
