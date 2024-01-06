@@ -1,15 +1,31 @@
-.radio {
+.radio[type='radio'] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: black;
+
 }
 
+
 .radio::before {
+
 }
 
 
 .radio:checked::before {
+
 }
 
 .label {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
 }
 
 .options {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
+
