@@ -8,6 +8,8 @@
     cursor: pointer;
     border-color: transparent;
     transition: .2s;
+
+    font-weight: 600;
 }
 
 .disabled {
@@ -17,7 +19,7 @@
 }
 
 .secondary {
-    width: 176px;
+    /*width: 176px;*/
     height: 30px;
     border: 1px solid #06C;
     background-color: #FFFFFF;
@@ -33,19 +35,19 @@
 }
 
 .default:hover {
-    width: 167px;
-    height: 30px;
+    /*width: 167px;*/
+    /*height: 30px;*/
     background: #0080FF;
 }
 
 .red:hover {
-    width: 167px;
+    /*width: 167px;*/
     height: 30px;
     background-color: #FF1A47;
 }
 
 .secondary:hover {
-    width: 176px;
+    /*width: 176px;*/
     height: 30px;
     background-color: #E5F0FA;
     color: #0066CC;
@@ -67,5 +69,4 @@
 
 .button:disabled {
     cursor: not-allowed;
-
 }
