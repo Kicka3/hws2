@@ -10,10 +10,10 @@ export const homeWorkReducer = (state: UserType[], action: ActionType): UserType
             if (action.payload === 'up') {
                 return [...state.sort((a, b) => a.name.localeCompare(b.name))]
             } else if (action.payload === 'down') {
-                return [...state.sort((a, b) => a.name.localeCompare(b.name)).reverse()]
+                let copyState = [...state]
+                return copyState.sort((a, b) => a.name.localeCompare(b.name)).reverse()
             }
-            return {...state}
-
+            return state
         }
         case 'check': {
             return state.filter(a => a.age > 18)
