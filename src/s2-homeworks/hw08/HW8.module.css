@@ -5,11 +5,11 @@
     font-weight: 600;
     line-height: normal;
 
-    border-bottom: 1px #E5E5E5;
+    border-top: 1px #E5E5E5;
 }
 
 .item:last-of-type {
-    border-bottom: none
+    border-top: none;
 }
 
 .users {
@@ -26,6 +26,7 @@
     display: flex;
     gap: 12px;
     margin: 34px 200px;
+
 }
 
 .container {
@@ -61,4 +62,5 @@
     font-family: Roboto, sans-serif;
     font-size: 14px;
     font-weight: 600;
+
 }
