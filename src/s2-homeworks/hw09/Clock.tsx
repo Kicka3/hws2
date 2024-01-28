@@ -37,9 +37,7 @@ function Clock() {
     const digitStr = (number: number) => number < 10 ? '0' + number : number;
 
     const stringTime =
-        `${digitStr(date.getHours())} 
-        : ${digitStr(date.getMinutes())} 
-        : ${digitStr(date.getSeconds())}`
+        `${digitStr(date.getHours())}:${digitStr(date.getMinutes())}:${digitStr(date.getSeconds())}`
         || <br/> // часы24:минуты:секунды (01:02:03)/(23:02:03)/(24:00:00)/(00:00:01) // пишут студенты
 
     const currentDate = date.toLocaleString("ru", {day: 'numeric', month: 'numeric', year: 'numeric',});
@@ -84,14 +82,14 @@ function Clock() {
             <div className={s.buttonsContainer}>
                 <SuperButton
                     id={'hw9-button-start'}
-                    disabled={false} // пишут студенты // задизэйблить если таймер запущен
+                    disabled={timerId !== undefined} // пишут студенты // задизэйблить если таймер запущен
                     onClick={start}
                 >
                     start
                 </SuperButton>
                 <SuperButton
                     id={'hw9-button-stop'}
-                    disabled={false} // пишут студенты // задизэйблить если таймер не запущен
+                    disabled={timerId === undefined} // пишут студенты // задизэйблить если таймер не запущен
                     onClick={stop}
                 >
                     stop
