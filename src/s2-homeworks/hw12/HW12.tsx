@@ -44,13 +44,11 @@ const HW12 = () => {
                     id={'hw12-select-theme'}
                     className={s.select}
                     onChange={(event) => change(event.target.value)}
-                    // сделать переключение тем
                     options={themes}
                 />
             </div>
         </div>
     )
 }
-// onChange={() =>change(event => event.target.value)}
 
 export default HW12
