@@ -1,14 +1,13 @@
 .button {
     border-radius: 3px;
     color: #FFFFFF;
-    padding: 5px 24px;
+    padding: 5px 18px;
     background: #06C;
     width: 128px;
     height: 30px;
     cursor: pointer;
     border-color: transparent;
     transition: .2s;
-
     font-weight: 600;
 }
 

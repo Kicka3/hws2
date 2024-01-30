@@ -28,7 +28,7 @@ function HW11() {
             setValue1(value[0]);
             setValue2(value[1])
         } else {
-            console.log(value)
+            setValue1(value)
         }
 
     }
