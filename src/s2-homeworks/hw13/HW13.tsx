@@ -37,11 +37,24 @@ const HW13 = () => {
                 setCode('Код 200!')
                 setImage(success200)
                 // дописать
+                setInfo('')
 
             })
             .catch((e) => {
                 // дописать
-
+                if (e.response.status === 500) {
+                    setCode('Код 500!')
+                    setImage(error500)
+                    setInfo('')
+                } else if (e.response.status === 400) {
+                    setCode('Код 400!')
+                    setImage(error400)
+                    setInfo('')
+                } else {
+                    setImage(errorUnknown)
+                    setCode('Unknown')
+                    setInfo('')
+                }
             })
     }
 
@@ -56,7 +69,7 @@ const HW13 = () => {
                         onClick={send(true)}
                         xType={'secondary'}
                         // дописать
-
+                        disabled={!!info}
                     >
                         Send true
                     </SuperButton>
@@ -65,7 +78,7 @@ const HW13 = () => {
                         onClick={send(false)}
                         xType={'secondary'}
                         // дописать
-
+                        disabled={!!info}
                     >
                         Send false
                     </SuperButton>
@@ -74,7 +87,7 @@ const HW13 = () => {
                         onClick={send(undefined)}
                         xType={'secondary'}
                         // дописать
-
+                        disabled={!!info}
                     >
                         Send undefined
                     </SuperButton>
@@ -83,7 +96,7 @@ const HW13 = () => {
                         onClick={send(null)} // имитация запроса на не корректный адрес
                         xType={'secondary'}
                         // дописать
-
+                        disabled={!!info}
                     >
                         Send null
                     </SuperButton>
