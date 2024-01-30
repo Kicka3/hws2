@@ -23,8 +23,7 @@ function HW11() {
     // const change = (event: any, value: number[]) => {
     const change = (event: any, value: any) => {
         // пишет студент // если пришёл массив - сохранить значения в оба useState, иначе в первый
-        // setValue1(value)
-        // setValue2(value1)
+
         if (Array.isArray(value)) {
             setValue1(value[0]);
             setValue2(value[1])
@@ -69,11 +68,4 @@ function HW11() {
     )
 }
 
-// onChange={(event: any, value: number | number[]) => {
-//     if (Array.isArray(value)) {
-//         change(event, value);
-//     } else {
-//         change(event, [value]);
-//     }
-// }}
 export default HW11
