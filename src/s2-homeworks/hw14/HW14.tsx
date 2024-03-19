@@ -37,7 +37,7 @@ const HW14 = () => {
                 // делает студент
 
                 // сохранить пришедшие данные
-
+                setLoading(false)
                 //
             })
     }
@@ -46,8 +46,9 @@ const HW14 = () => {
         setFind(value)
         // делает студент
 
+        console.log(value)
         // добавить/заменить значение в квери урла
-        // setSearchParams(
+        setSearchParams(value)
 
         //
     }
